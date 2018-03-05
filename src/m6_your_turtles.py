@@ -2,15 +2,44 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Jabari-Aman Delemore.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+# ----------------------------------------------------------------------
+# Red Turtle
+# ----------------------------------------------------------------------
+shuri = rg.SimpleTurtle('turtle')
+shuri.pen = rg.Pen('yellow', 30)
+shuri.speed = 40
 
+shuri.forward(200)
+shuri.right(250)
+shuri.forward(90)
+shuri.left(50)
+shuri.backward(200)
+
+flash = rg.SimpleTurtle('turtle')
+flash.pen = rg.Pen('black', 50)
+flash.speed = 40
+
+flash.right(90)
+flash.forward(100)
+flash.left(90)
+flash.forward(400)
+flash.left(90)
+flash.forward(250)
+flash.left(90)
+flash.forward(400)
+flash.left(90)
+flash.forward(150)
+print('fastest man alive')
 ###############################################################################
-# TODO: 2.
+# Done: 2.
 #   You should have RUN the  m4e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -27,3 +56,4 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+window.close_on_mouse_click()

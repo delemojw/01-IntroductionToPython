@@ -37,7 +37,7 @@ flash.left(90)
 flash.forward(400)
 flash.left(90)
 flash.forward(150)
-print('fastest man alive')
+print('fastest man alive !')
 ###############################################################################
 # Done: 2.
 #   You should have RUN the  m4e_loopy_turtles  module and READ its code.
